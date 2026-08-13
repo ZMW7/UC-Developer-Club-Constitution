@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{xspace}
+% \documentclass[12pt]{constitution}
+% \usepackage{amsmath}
+% \usepackage{enumitem}
+
+% Defining commands
+\newcommand{\clubName}{CLUB NAME\xspace}
+\newcommand{\votingBody}{membership body\xspace}
+
+\newcommand{\article}[1]{\section{Article #1}}
+
+\newcounter{constitutionarticle}
+\newcommand{\constitutionarticle}[1]{%
+  \refstepcounter{constitutionarticle}%
+  \setcounter{section}{\value{constitutionarticle}}
+    % \vspace{1em}
+    \vspace{3em}
+    {\Large\bfseries Article \Roman{constitutionarticle}} --
+    {\Large\bfseries #1}
+  \vspace{0.5em}
+}
+
+\let\oldsection\section
+\let\section\subsection
+\let\subsection\subsubsection
+
+\title{Constitution of \clubName}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\constitutionarticle{Name of the Club}
+
+The name of the club shall be \clubName.
+
+\constitutionarticle{Purpose}
+
+\clubName is the University of Cincinnati's 
+
+\constitutionarticle{Membership}
+
+\section{} There shall be no limit on the size of the membership body of \clubName.
+
+\constitutionarticle{Officers}
+
+\section{} The officers of the Student Organization shall be President, Vice President, Treasurer, and Event Coordinator.
+The President, Vice President, Treasurer, and Event Coordinator positions are to be elected anually by the \votingBody.
+
+\section{} Officers must be a matriculated student and be in good standing with their college.
+
+% Subsection on officers being kicked out
+\subsection{} Any officer who, during the term of their office, fails to maintain their status as a matriculating undergraduate or graduate member of the University, or who has not participated in the 
+
+% Officers can call for a re-election.
+
+\end{document}

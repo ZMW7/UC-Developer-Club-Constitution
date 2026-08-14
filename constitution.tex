@@ -1,12 +1,16 @@
 \documentclass{article}
 \usepackage{xspace}
 % \documentclass[12pt]{constitution}
-% \usepackage{amsmath}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{titling} % Allows reuse of \title and \maketitle
 % \usepackage{enumitem}
 
 % Defining commands
-\newcommand{\clubName}{Developer Club at the University of Cincinnati\xspace}
-\newcommand{\votingBody}{membership body\xspace}
+\newcommand{\clubName}{University of Cincinnati Developer Club\xspace}
+\newcommand{\votingBody}{voting members\xspace}
+\newcommand{\nonvotingBody}{nonvoting members\xspace}
+\newcommand{\honoraryBody}{honorary members\xspace}
 
 \newcommand{\article}[1]{\section{Article #1}}
 
@@ -25,11 +29,12 @@
 \let\section\subsection
 \let\subsection\subsubsection
 
-\title{Constitution of \clubName}
-\date{}
+% \title{Constitution of \clubName}
 
 \begin{document}
 
+\title{Constitution of \clubName}
+\date{}
 \maketitle
 
 \constitutionarticle{Name of the Club}
@@ -41,6 +46,9 @@ The name of the club shall be \clubName.
 \clubName is the University of Cincinnati's 
 
 \constitutionarticle{Membership}
+
+\section{} There shall be three ($3$) classes of members: \votingBody, \nonvotingBody, and \honoraryBody.
+\section{} Voting membership shall be open to any full-time or part-time undergraduate or graduate students, enrolled in any of the colleges, schools, or divisions of the University at the time of applying for membership.
 
 \section{} There shall be no limit on the size of the membership body of \clubName.
 
@@ -55,5 +63,38 @@ The President, Vice President, Treasurer, and Event Coordinator positions are to
 \subsection{} Any officer who, during the term of their office, fails to maintain their status as a matriculating undergraduate or graduate member of the University, or who has not participated in the 
 
 % Officers can call for a re-election.
+
+\constitutionarticle{Meetings}
+
+\section{} Meetings shall occur every Monday and Wednesday during the Fall and Spring undergraduate semesters of the University, excepting holidays.
+
+\constitutionarticle{University Advisor}
+
+\constitutionarticle{Amendments}
+
+\section{} Amendments to this constitution may be proposed by any member of the \votingBody. 
+\section{} Proposed amendments are to be discussed during the next meeting.
+\section{} Amendments may be ratified through a simple majority vote of the \votingBody in conjunction with a $\sfrac{2}{3}$ affirmative vote by the club officers, through a $\sfrac{5}{8}$ affirmative vote of present members of the \votingBody in conjunction with the agreement of one officer, or through a $\sfrac{2}{3}$ affirmative vote of the present members of the \votingBody.
+
+\constitutionarticle{Ratification}
+
+\section{} A supermajority vote of $\sfrac{2}{3}$ of the \votingBody shall be sufficient for the ratification of this constitution, with approval of the appropriate governing board.
+
+\clearpage
+
+\title{\clubName Bylaws}
+\date{}
+\maketitle
+
+% Redefining sections
+\let\subsubsection\subsection
+\let\subsection\section
+\let\section\oldsection
+
+\section{HI}
+\subsection{Hello}
+\subsubsection{howdy}
+Bylaws
+
 
 \end{document}

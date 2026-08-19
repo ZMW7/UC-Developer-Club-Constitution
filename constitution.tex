@@ -5,6 +5,7 @@
 \usepackage{xfrac}
 \usepackage{titling} % Allows reuse of \title and \maketitle
 % \usepackage{enumitem}
+\usepackage{etoolbox}
 
 % Defining commands
 \newcommand{\clubName}{University of Cincinnati Developer Club\xspace}
@@ -12,6 +13,14 @@
 \newcommand{\votingBody}{voting body\xspace}
 \newcommand{\nonvotingBody}{nonvoting body\xspace}
 \newcommand{\honoraryBody}{honorary members\xspace}
+
+\newcommand{\electionTerm}{term\xspace}
+\newcommand{\officersGroup}{Elected Officers\xspace}
+
+\newcommand{\meeting}{Student Organization meeting\xspace}
+\newcommand{\meetings}{{\meeting}s\xspace}
+
+\newcommand{\centerForStudentInvolvement}{Center for Student Involvement\xspace}
 
 \newcommand{\article}[1]{\section{Article #1}}
 
@@ -57,26 +66,46 @@ The name of the club shall be \clubName.
 
 \constitutionarticle{Officers}
 
-\section{} The officers of the Student Organization shall be President, Vice President, Treasurer, and Event Coordinator.
-The President, Vice President, Treasurer, and Event Coordinator positions are to be elected anually by the \votingBody.
+\section{} The officers of the Student Organization shall be President, Vice President, Treasurer, Outreach Coordinator, and Social Media Manager.
 
-\section{} Officers must be a matriculated student and be in good standing with their college.
+\section{} Holders of officer positions shall be elected anually by the \votingBody. No officer shall hold a specific officer position for more than one \electionTerm. No officer shall hold more than one officer position in a single \electionTerm.
 
-% Subsection on officers being kicked out
-\subsection{} Any officer who, during the term of their office, fails to maintain their status as a matriculating undergraduate or graduate member of the University, or who has not participated in the 
+% The President
+\section{} 
+The President shall be the Primary Officer of the Registered Student Organization, and shall preside over all meetings of \clubName.
+
+\subsection{}
+A member of the \votingBody can only be elected to the position of President if they have previously served as an officer of \clubName, or if they have run for the seat of President in at least two prior elections of \clubName. If these criteria are not met by any members of the club willing to pursue the presidential seat, any member of the \votingBody may be elected to the seat of President.
+
+% Officers Conditions & Removal
+\section{} An Officer must be matriculated student and be in good standing with their college. Officers who do not meet eligibility requirements must relinquish their position immediately upon notification from the University that they do not meet the eligibility requirements. Ineligible officers will be replaced according to this Constitution.
+
+\section{}
+An officer may be removed from their seat through a vote of $80\%$ of all officers and $50\%$ of the \votingBody that is present at a given \meeting, or $60\%$ of all officers and two thirds ($\sfrac{2}{3}$) of the \votingBody that is present at a given \meeting.
+A vote to remove a particular officer from their seat may only be held once per term.
+
+
 
 % Officers can call for a re-election.
 
 \constitutionarticle{Meetings}
 
-\section{} Meetings shall occur every Monday and Wednesday during the Fall and Spring undergraduate semesters of the University, excepting holidays.
+\section{} \meetings shall occur every Monday and Wednesday during the Fall and Spring undergraduate semesters of the University, excepting holidays and other dates decided by the 
 
 \constitutionarticle{University Advisor}
+The Advisor for \clubName must be a member of the University staff or faculty.
+
+\constitutionarticle{Disolution}
+The club can be disolved through the unanimous vote of all club officers, as well as a unanimous, save for a maximum number of members that is one less than the number of officer positions as defined by this Constitution, vote by the \votingBody.
+In the case of dissolution, funds shall be transfered to an organization with a similar goal, and all essential investments must be returned to the \centerForStudentInvolvement.
 
 \constitutionarticle{Amendments}
 
-\section{} Amendments to this constitution may be proposed by any member of the \votingBody. 
-\section{} Proposed amendments are to be discussed during the next meeting.
+\section{} 
+Amendments to this constitution may be proposed by any member of the \votingBody. 
+\subsection{}
+Following the proposal of an amendment, a six day waiting period shall begin, and notice of the proposed amendment must be given to the \votingBody within this waiting period. Proposed amendments shall be voted upon by members of the \votingBody in the next \meeting to occur after the waiting period has expired. 
+
 \section{} Amendments may be ratified through a simple majority vote of the \votingBody in conjunction with a $\sfrac{2}{3}$ affirmative vote by the club officers, through a $\sfrac{5}{8}$ affirmative vote of present members of the \votingBody in conjunction with the agreement of one officer, or through a $\sfrac{2}{3}$ affirmative vote of the present members of the \votingBody.
 
 \constitutionarticle{Ratification}
@@ -94,7 +123,41 @@ The President, Vice President, Treasurer, and Event Coordinator positions are to
 \let\subsection\section
 \let\section\oldsection
 
-Bylaws
+% Reseting section counter
+\setcounter{section}{0}
 
+% \let\section{Section \arabic{section}}
+\renewcommand{\thesection}{Section \arabic{section}}
+
+\section{Officers and Duties}
+
+% The President
+\subsection{President}
+The President shall be responsible for establishing the annual goals and path of the club, in accordance with the club's mission.
+If a matriculated student at the University, the president must maintain a Grade Point Average of at least 2.5.
+
+% The Vice President
+\subsection{Vice President}
+
+% The Treasurer
+\subsection{Treasurer} 
+The Treasurer shall be responsible for the creation of reports to be shared at \meetings and at other such times at the bedhest of the President or the \officersGroup.
+
+% Outreach Coordinator
+\subsection{Outreach Coordinator}
+
+% Social Media Manager
+\subsection{Social Media Manager}
+
+\section{University Advisor}
+
+\section{Project Teams}
+
+\section{Finances}
+
+\section{Amendments of Bylaws}
+Amendments to the Bylaws of \clubName may be proposed by any member of the \nonvotingBody or \votingBody. Following the proposal of an amendment, a six day waiting period shall begin, and notice of the proposed amendment must be given to the \votingBody within this waiting period. Proposed amendments shall be voted upon by members of the \votingBody in the next \meeting to occur after the waiting period has expired. 
+
+\section{Non-Hazing and Anti-Discrimination Clause}
 
 \end{document}

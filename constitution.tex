@@ -1,15 +1,11 @@
 \documentclass{article}
 \usepackage{xspace}
-% \documentclass[12pt]{constitution}
 \usepackage{amsmath}
 \usepackage{xfrac}
-\usepackage{titling} % Allows reuse of \title and \maketitle
-% \usepackage{enumitem}
+\usepackage{titling}
 \usepackage{etoolbox}
 
-% Defining commands
 \newcommand{\clubName}{Developer Club\xspace}
-\newcommand{\shortenedClubName}{Dev Club\xspace}
 \newcommand{\votingBody}{voting body\xspace}
 \newcommand{\nonvotingBody}{nonvoting body\xspace}
 \newcommand{\honoraryBody}{honorary members\xspace}
@@ -28,7 +24,6 @@
 \newcommand{\constitutionarticle}[1]{%
   \refstepcounter{constitutionarticle}%
   \setcounter{section}{\value{constitutionarticle}}
-    % \vspace{1em}
     \vspace{3em}
     {\Large\bfseries Article \Roman{constitutionarticle}} --
     {\Large\bfseries #1}
@@ -56,11 +51,11 @@ The purpose of the \clubName is to give students a collaborative, skill enhancin
 \constitutionarticle{Membership}
 
 \section{} There shall be three ($3$) classes of members: voting members, nonvoting members, and honorary members.
-\subsection{} Voting membership shall be open to any full-time or part-time undergraduate or graduate students, enrolled in any of the colleges, schools, or divisions of the University at the time of applying for membership. The body of voting members is to be named the \votingBody. Upon graduation or other cessation of enrollment to the University, a member of the \votingBody shall be stripped of their voting membership.
-\subsection{} Nonvoting membership shall be open to any student and any member of the University faculty, community or administrative staff.
+\subsection{} Voting membership shall be open to any full-time or part-time undergraduate or graduate students, enrolled in any of the colleges, schools, or divisions of the University of Cincinnati at the time of applying for membership. The body of voting members is to be named the \votingBody. Upon graduation or other cessation of enrollment to the University of Cincinnati, a member of the \votingBody shall be stripped of their voting membership.
+\subsection{} Nonvoting membership shall be open to any student and any member of the University of Cincinnati faculty, community or administrative staff.
 \subsection{} Honorary membership shall be open to any desiring person, elected to such membership by a majority of the \votingBody.
 
-\section{} There shall be no limit to the size of the membership body of the \shortenedClubName.
+\section{} There shall be no limit to the size of the membership body of the \clubName.
 
 \constitutionarticle{Officers}
 
@@ -69,7 +64,7 @@ The Officers of the Student Organization shall be President, Vice President, Tre
 Together, these Officers shall make up the \officersGroup.
 
 \section{} 
-Holders of officer positions shall be elected annually by the \votingBody. No Officer shall hold a specific officer position for more than one \electionTerm. No Officer shall hold more than one officer position in a single \electionTerm.
+Holders of officer positions shall be elected annually by the \votingBody between President's Day and the first Sunday of April the same calendar year. No Officer shall hold a specific officer position for more than one \electionTerm. No Officer shall hold more than one officer position in a single \electionTerm.
 
 % The President
 \section{} 
@@ -80,7 +75,7 @@ A member of the \votingBody can only be elected to the position of President if 
 
 % Officers Conditions & Removal
 \section{} 
-An Officer must be matriculated student and be in good standing with their college. Officers who do not meet eligibility requirements must relinquish their position immediately upon notification from the University that they do not meet the eligibility requirements. Ineligible officers will be replaced according to this Constitution.
+An Officer must be matriculated student and be in good standing with their college. Officers who do not meet eligibility requirements must relinquish their position immediately upon notification from the University of Cincinnati that they do not meet the eligibility requirements. Ineligible officers will be replaced according to this Constitution.
 
 \section{}
 An officer may be removed from their seat through a vote of $80\%$ of all officers and $50\%$ of the \votingBody that is present at a given \meeting, or $60\%$ of all officers and two thirds ($\sfrac{2}{3}$) of the \votingBody that is present at a given \meeting.
@@ -92,11 +87,11 @@ Upon the removal of an Officer, a Special Election shall be held to find a repla
 \constitutionarticle{Meetings}
 
 \section{} 
-\meetings shall occur every Monday and Wednesday during the Fall and Spring undergraduate semesters of the University, except for holidays and other dates decided by the \officersGroup.
+\meetings shall occur every Monday during the Fall and Spring undergraduate semesters of the University of Cincinnati, except for holidays and other dates decided by the \officersGroup.
 
 \constitutionarticle{University Advisor}
 
-The Advisor for \clubName must be a member of the University staff or faculty.
+The Advisor for \clubName must be a member of the University of Cincinnati staff or faculty.
 
 \constitutionarticle{Dissolution}
 
@@ -115,7 +110,7 @@ Following the proposal of an amendment, a six day waiting period shall begin, an
 
 \constitutionarticle{Ratification}
 
-\section{} A supermajority vote of $\sfrac{2}{3}$ of the \votingBody shall be sufficient for the ratification of this constitution, with approval of the appropriate governing board.
+\section{} All members of the \officersGroup must approve the ratification of this constitution. The vote to approve constitution ratification shall be open from the start of the Fall semester through Labor Day of the same semester and the last Monday of March through the first second Monday of April.
 
 \clearpage
 
@@ -123,23 +118,18 @@ Following the proposal of an amendment, a six day waiting period shall begin, an
 \date{}
 \maketitle
 
-% Redefining sections
 \let\subsubsection\subsection
 \let\subsection\section
 \let\section\oldsection
-
-% Reseting section counter
 \setcounter{section}{0}
 
-% \let\section{Section \arabic{section}}
 \renewcommand{\thesection}{Section \arabic{section}}
 
 \section{Officer Duties}
 
 % The President
 \subsection{President}
-The President shall be responsible for establishing the annual goals and path of the club, in accordance with the club's mission. Included is the responsibility of ensuring the \officersGroup is functioning efficiently and as expected.
-The president must maintain a Grade Point Average of at least 2.75.
+The President shall be responsible for establishing the annual goals and path of the club, in accordance with the club's mission. Included is the responsibility of ensuring the \officersGroup is functioning efficiently and as expected. The President is also responsible for completing the mandatory registered student organization re-registration process on behalf of the Developer Club directly after officer elections, during Phase 1 (April 1 - May 15). The president must maintain a Grade Point Average of at least 2.75.
 
 % The Vice President
 \subsection{Vice President}
@@ -147,7 +137,7 @@ The Vice President shall preside over all \meetings in the absence of the Presid
 
 % The Treasurer
 \subsection{Treasurer} 
-The Treasurer shall be responsible for the creation of reports to be shared at the bedhest of the President or the \officersGroup, and shall be responsible for the creation and maintenance of a budget. The Treasurer shall have final approval of all Student Organization expenditures. The Treasurer shall sign all checks in payment of bills. Included is the responsibility of having knowledge of the club's governing documents.
+The Treasurer shall be responsible for the creation of reports to be shared at the behest of the President or the \officersGroup, and shall be responsible for the creation and maintenance of a budget. The Treasurer shall have final approval of all Student Organization expenditures. The Treasurer shall sign all checks in payment of bills. Included is the responsibility of having knowledge of the club's governing documents.
 
 \subsubsection{} In the absence of the President and Vice President, the Treasurer shall preside at all meetings of \clubName.
 \subsubsection{} The Treasurer shall be responsible for educating their successor on the obligations and responsibility of the Treasurer position.
@@ -198,13 +188,13 @@ Amendments to the Bylaws of \clubName may be proposed by any member of the \nonv
 \section{Non-Hazing and Anti-Discrimination Clause}
 
 \subsection{}
-The laws of the State of Ohio and the policies of the University concerning hazing shall be observed.
+The laws of the State of Ohio and the policies of the University of Cincinnati concerning hazing shall be observed.
 
 \subsection{}
 The \clubName and its members will not engage in hazing. ``Hazing'' means doing any act or coercing another, including the victim, to do any act of initiation into any student or other organization or any act to continue or reinstate membership in or affiliation with any student or other organization that causes or creates a substantial risk of causing mental or physical harm to any person, including coercing another to consume alcohol or a drug of abuse, as defined in section 3719.011 of the Revised Code.
 
 \subsection{}
-The University prohibits discrimination and harassment in any of its  activities, programs, admissions, or employment on the basis of age, ancestry, color, disability,  gender identity and/or expression, genetic information, military status (including veteran status),  national origin (including shared ancestry or ethnic characteristics), parental status (including  status as a nursing mother and status as a foster parent), pregnancy, race, religion, sex, sexual  orientation, or any other status protected by law (each a ``protected class'').
+The University of Cincinnati prohibits discrimination and harassment in any of its  activities, programs, admissions, or employment on the basis of age, ancestry, color, disability,  gender identity and/or expression, genetic information, military status (including veteran status),  national origin (including shared ancestry or ethnic characteristics), parental status (including  status as a nursing mother and status as a foster parent), pregnancy, race, religion, sex, sexual  orientation, or any other status protected by law (each a ``protected class'').
 
 
 \end{document}
